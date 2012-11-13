@@ -1,0 +1,115 @@
+// Import the normalize plugin
+$legacy-support-for-ie6: 0;
+$legacy-support-for-ie7: 1;
+$legacy-support-for-mozilla: 0;
+@import "normalize";
+@import "compass/css3/text-shadow";
+@import "site/*.png"; // stupid syntax highlighting*/
+
+@mixin letterpress($background-color){
+    background-color: $background-color;
+    color: shade($background-color, 35);
+    text-shadow: tint($background-color, 9) -1px 1px 1px
+}
+
+html, body {height: 100%}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: normal;
+  letter-spacing: normal;
+  line-height: 1.45em;
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+#header {
+  div {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    @include letterpress(#333);
+  }
+}
+
+.goodrobot {
+  min-height: 100%;
+}
+
+.content {
+  overflow: auto;
+  padding-bottom: 50px;
+}
+
+body > footer {
+  position: relative;
+  margin-top: -50px;
+  height: 50px;
+  clear: both;
+  background-color:#224293;
+  border-top: 3px solid #eee;
+}
+
+a {
+  text-decoration : none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  font-family: 'Gentium Book Basic', serif;
+  padding: 10px;
+  text-align: center;
+  a {
+    @include letterpress(#224293);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  a:hover {
+    color: #fff;
+    text-shadow: #224293 -1px 1px 1px
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin: 4px;
+    }
+
+  }
+}
+
+h1 {
+  font-family: 'Gentium Book Basic', serif;
+}
+
+article {
+  width: 800px;
+  margin: auto;
+
+  h1 {
+    margin-bottom: 5px;
+  }
+
+  header {
+  font-family: 'Gentium Book Basic', serif;
+    text-align: center;
+    .details {
+      color: #888;
+    }
+  }
+
+  p {
+    text-indent: 25px;
+  }
+}
