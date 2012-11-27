@@ -4,6 +4,8 @@ $legacy-support-for-ie7: 1;
 $legacy-support-for-mozilla: 0;
 @import "normalize";
 @import "compass/css3/text-shadow";
+@import "compass/css3/images";
+@import "compass/css3/box-shadow";
 @import "site/*.png"; // stupid syntax highlighting*/
 
 @mixin letterpress($background-color){
@@ -16,24 +18,29 @@ html, body {height: 100%}
 
 body {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-style: normal;
   font-weight: normal;
   text-transform: normal;
   letter-spacing: normal;
   line-height: 1.45em;
-  color: #333;
+  color: #444;
+  background-color:#0a476a;
   padding: 0;
   margin: 0;
+  //@include background(image_url("site/candyhole.png"));
+  background-repeat: both;
 }
 
 #header {
-  div {
-    padding: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    @include letterpress(#333);
-  }
+  text-align: center;
+  padding-top: 5px;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #0089ef;
+  background-color:#224293;
+  @include background-image(linear-gradient(top, #a5d7a5 0%,#a5d7a5 25%,#78bc99 26%,#78bc99 50%,#398282 51%,#398282 75%,#0a476a 76%,#0a476a 100%));
+  color:#eee;
 }
 
 .goodrobot {
@@ -50,8 +57,9 @@ body > footer {
   margin-top: -50px;
   height: 50px;
   clear: both;
-  background-color:#224293;
-  border-top: 3px solid #eee;
+  background-color:#398282;
+  @include background-image(linear-gradient(top, #0a476a 0%,#0a476a 25%,#398282 26%,#398282 50%,#78bc99 51%,#78bc99 75%,#a5d7a5 76%,#a5d7a5 100%));
+  //border-top: 3px solid #eee;
 }
 
 a {
@@ -62,13 +70,13 @@ a:hover {
 }
 
 nav {
-  font-family: 'Gentium Book Basic', serif;
+  font-family: 'Press Start 2P';
   padding: 10px;
   text-align: center;
   a {
-    @include letterpress(#224293);
+    color: shade(#398282, 35);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
   }
   a:hover {
@@ -91,11 +99,17 @@ nav {
 
 h1 {
   font-family: 'Gentium Book Basic', serif;
+  font-size:2.3em;
+  font-weight: normal;
 }
 
 article {
-  width: 800px;
-  margin: auto;
+  background-color:#fafafa;
+  padding:5px 50px;
+  max-width: 800px;
+  width:70%;
+  margin: 20px auto 0;
+  @include box-shadow(#333 1px 1px 6px);
 
   h1 {
     margin-bottom: 5px;
@@ -113,3 +127,7 @@ article {
     text-indent: 25px;
   }
 }
+
+.tag-python {color: #008f00}
+.tag-ruby {color: #941200}
+.tag-php {color: #625a93}
