@@ -1,0 +1,33 @@
+@import "grid";
+$columns: 12;
+$column-width: 60px; 
+$gutter-width: 20px; 
+
+body {
+  background-color:#fafafa;
+}
+.stream {
+
+}
+.feeds {
+  @include row();
+  margin: auto;
+}
+.feed {
+  @include column(4);
+}
+
+.other-feeds {
+  @include row();
+  margin: auto;
+}
+
+.interest-links {
+  @include column(8);
+}
+
+.pinboard {
+  @include column(4);
+}
+
+
