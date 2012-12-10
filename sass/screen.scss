@@ -2,10 +2,12 @@
 $legacy-support-for-ie6: 0;
 $legacy-support-for-ie7: 1;
 $legacy-support-for-mozilla: 0;
+
 @import "normalize";
 @import "compass/css3/text-shadow";
 @import "compass/css3/images";
 @import "compass/css3/box-shadow";
+
 @import "site/*.png"; // stupid syntax highlighting*/
 
 @mixin letterpress($background-color){
@@ -14,7 +16,30 @@ $legacy-support-for-mozilla: 0;
     text-shadow: tint($background-color, 9) -1px 1px 1px
 }
 
+$gradient1: #a5d7a5;
+$gradient2: #78bc99;
+$gradient3: #398282;
+$gradient4: #0a476a;
+
 html, body {height: 100%}
+
+a {
+  color: $gradient4;
+}
+a:visited {
+  color: $gradient3;
+}
+
+@for $i from 1 through 10 {
+  .link-list li:nth-child(#{$i}) .time-ago {
+    color:mix($gradient2, $gradient4, 10% * $i);
+  }
+}
+    
+
+.time-ago {
+  color:$gradient3;
+}
 
 body {
   font-family: Helvetica, Arial, sans-serif;
@@ -39,7 +64,12 @@ body {
   font-weight: bold;
   background-color: #0089ef;
   background-color:#224293;
-  @include background-image(linear-gradient(top, #a5d7a5 0%,#a5d7a5 25%,#78bc99 26%,#78bc99 50%,#398282 51%,#398282 75%,#0a476a 76%,#0a476a 100%));
+  @include background-image(linear-gradient(top, 
+    $gradient1 0%,  $gradient1 25%, 
+    $gradient2 26%, $gradient2 50%, 
+    $gradient3 51%, $gradient3 75%, 
+    $gradient4 76%, $gradient4 100%
+  ));
   color:#eee;
 }
 
@@ -70,17 +100,13 @@ a:hover {
 }
 
 nav {
-  font-family: 'Press Start 2P';
-  padding: 10px;
+  padding: 15px 0 0 0;
   text-align: center;
   a {
-    color: shade(#398282, 35);
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  a:hover {
     color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
     text-shadow: #224293 -1px 1px 1px
   }
 

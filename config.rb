@@ -1,4 +1,5 @@
 require 'compass-normalize'
+require 'compass-colors'
 # Require any additional compass plugins here.
 
 

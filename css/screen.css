@@ -300,17 +300,82 @@ table {
   border-spacing: 0;
 }
 
-/* line 114, site/*.png */
+/* line 154, site/*.png */
 .site-sprite {
-  background: url('/images/site-s8b63006a17.png') no-repeat;
+  background: url('/images/site-s4a77cf49ab.png') no-repeat;
 }
 
-/* line 17, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
 html, body {
   height: 100%;
 }
 
-/* line 19, ../sass/screen.scss */
+/* line 26, ../sass/screen.scss */
+a {
+  color: #0a476a;
+}
+
+/* line 29, ../sass/screen.scss */
+a:visited {
+  color: #398282;
+}
+
+/* line 34, ../sass/screen.scss */
+.link-list li:nth-child(1) .time-ago {
+  color: #14526e;
+}
+
+/* line 34, ../sass/screen.scss */
+.link-list li:nth-child(2) .time-ago {
+  color: #205e73;
+}
+
+/* line 34, ../sass/screen.scss */
+.link-list li:nth-child(3) .time-ago {
+  color: #2b6a78;
+}
+
+/* line 34, ../sass/screen.scss */
+.link-list li:nth-child(4) .time-ago {
+  color: #36757c;
+}
+
+/* line 34, ../sass/screen.scss */
+.link-list li:nth-child(5) .time-ago {
+  color: #418181;
+}
+
+/* line 34, ../sass/screen.scss */
+.link-list li:nth-child(6) .time-ago {
+  color: #4c8d86;
+}
+
+/* line 34, ../sass/screen.scss */
+.link-list li:nth-child(7) .time-ago {
+  color: #57988a;
+}
+
+/* line 34, ../sass/screen.scss */
+.link-list li:nth-child(8) .time-ago {
+  color: #62a48f;
+}
+
+/* line 34, ../sass/screen.scss */
+.link-list li:nth-child(9) .time-ago {
+  color: #6db094;
+}
+
+/* line 34, ../sass/screen.scss */
+.link-list li:nth-child(10) .time-ago {
+  color: #78bc99;
+}
+
+/* line 40, ../sass/screen.scss */
+.time-ago {
+  color: #398282;
+}
+
+/* line 44, ../sass/screen.scss */
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -326,7 +391,7 @@ body {
   background-repeat: both;
 }
 
-/* line 35, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 #header {
   text-align: center;
   padding-top: 5px;
@@ -342,18 +407,18 @@ body {
   color: #eee;
 }
 
-/* line 46, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 .goodrobot {
   min-height: 100%;
 }
 
-/* line 50, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 .content {
   overflow: auto;
   padding-bottom: 50px;
 }
 
-/* line 55, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 body > footer {
   position: relative;
   margin-top: -50px;
@@ -367,54 +432,49 @@ body > footer {
   background-image: linear-gradient(top, #0a476a 0%, #0a476a 25%, #398282 26%, #398282 50%, #78bc99 51%, #78bc99 75%, #a5d7a5 76%, #a5d7a5 100%);
 }
 
-/* line 65, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 a {
   text-decoration: none;
 }
 
-/* line 68, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 72, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 nav {
-  font-family: 'Press Start 2P';
-  padding: 10px;
+  padding: 15px 0 0 0;
   text-align: center;
 }
-/* line 76, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 nav a {
-  color: #255454;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
-}
-/* line 82, ../sass/screen.scss */
-nav a:hover {
   color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
   text-shadow: #224293 -1px 1px 1px;
 }
-/* line 87, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 92, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 nav ul li {
   display: inline-block;
   margin: 4px;
 }
 
-/* line 100, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 h1 {
   font-family: 'Gentium Book Basic', serif;
   font-size: 2.3em;
   font-weight: normal;
 }
 
-/* line 106, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 article {
   background-color: #fafafa;
   padding: 5px 50px;
@@ -425,35 +485,35 @@ article {
   -moz-box-shadow: #333333 1px 1px 6px;
   box-shadow: #333333 1px 1px 6px;
 }
-/* line 114, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 article h1 {
   margin-bottom: 5px;
 }
-/* line 118, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 article header {
   font-family: 'Gentium Book Basic', serif;
   text-align: center;
 }
-/* line 121, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 article header .details {
   color: #888;
 }
-/* line 126, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 article p {
   text-indent: 25px;
 }
 
-/* line 131, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 .tag-python {
   color: #008f00;
 }
 
-/* line 132, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 .tag-ruby {
   color: #941200;
 }
 
-/* line 133, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 .tag-php {
   color: #625a93;
 }
